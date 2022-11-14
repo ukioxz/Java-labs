@@ -29,12 +29,14 @@ public class Main {
 			System.out.print(values + ',');
 		}*/
 		bubbleSort(cosmetics);
+		System.out.println("Sorting by desending order:");
 		for (int i = 0; i < cosmetics.length; i++) {
-            System.out.println(cosmetics[i].getPrice());
+            System.out.println(cosmetics[i].getPrice()+ " " + cosmetics[i].getName());
         }
 		bubbleSortWeight(cosmetics);
+		System.out.println("\nSorting by increments:");
 		for (int i = 0; i < cosmetics.length; i++) {
-            System.out.println(cosmetics[i].getWeight());
+            System.out.println(cosmetics[i].getWeight() + " " + cosmetics[i].getName());
         }
 		
 	}
